@@ -1,0 +1,115 @@
+= Resumen primer parcial
+
+== HTML
+HTML es un lenguaje marcado que se utiliza para el desarrollo de paginas de Internet. +
+Sus siglas HyperText Markup Language, es decir lenguaje de marcas de hipertexto. 
+
+=== Etiquetas
+Son las estructuras basicas en un documtento html encierra el contenido y le dan significado +
+y ayuda en como se acomoda el texto.
+
+=== Atributos 
+Las etiquetas contienen atributos o modificadores. +
+
+|===
+|Atributo |Descripcion
+
+| ID
+| Establece un identificador único a cada elemento dentro de una página HTML
+
+| Class
+| Establece la clase CSS que se aplica a los estilos del elementos 
+
+| Style
+| Establece de forma directa los estilos CSS de un elemento
+
+| Title
+| Establece el título a un elemento (mejora la accesibilidad y los navegadores lo muestran cuando el usuario pasa el ratón por encima del elemento)
+|===
+
+=== Valores
+Los valores de los atributos deben ir entre comillas dobles.
+
+=== Contenido
+Todo lo que se encuentre entre a etiqueta de apertura y cierre.
+
+=== Elementos
+Todo lo que se encuentre dentro de las etiquetas (atributos, valores y contenido).
+
+== CSS
+CSS es un lenguaje que describe el estilo de un documento HTML. +
+CSS el sgnificado de sus siglas son Hojas de Estilo en Cascada(Cascading Style Sheets).
+
+=== Selectores 
+Los selectores definen sobre qué elementos se aplicará un conjunto de reglas CSS. +
+
+* Selector de tipo: Selecciona todos los elementos que coinciden con el nombre del elemento especificado. +
+* Selector de clase: Selecciona todos los elementos que tienen el atributo de class especificado.
+* Selector de ID: Selecciona un elemento basándose en el valor de su atributo id. Solo puede haber un elemento con un determinado ID dentro de un documento. +
+*  Selector de atributo: Selecciona elementos basándose en el valor de un determinado atributo.
+
+=== Propiedades
+El aspecto del elemento al que se le quiere aplicar estos elementos.
+
+=== Valores
+El estilo que se va aplicar.
+
+== CSS Box Model
+Todos los elementos HTML se pueden considerar como cuadros. En CSS, el término "modelo de caja" se usa cuando se habla de diseño y diseño. +
+
+Se recomienda siempre cambiar la propiedad la propiedad box-sizing a border-box esto hara que +
+que se incluya el border y el paddin dentro de la propiedad Width. +
+* Padding: es el relleno dentro del elemento DENTO DEL BORDE. +
+* Margin : Es la separacion dentro de los elementos AFUERA DEL BORDE. +
+
+Los elementos de un Box Model son: +
+* Margin +
+* Border +
+* Padding +
+* Content +
+
+== CSS El flujo normal del documento 
+1. Los elementos de un bloque ocupan todo el ancho del contenedor y su alto lo define su contenido. +
+2. Los elementos de un bloque se aplicaran uno encima del otro. +
+3. Los elementos de linea se colocan uno encima del otro. +
+4. Todos los elementos estan conscientes unos de los otros. +
+5. Los margenes colapsan.
+
+== CSS Media Queries
+Las media queries (en español "consultas de medios") son útiles cuando deseas modificar +
+ tu página web o aplicación en función del tipo de dispositivo (como una impresora o +
+ una pantalla) o de características y parámetros específicos (como la resolución de la +
+ pantalla o el ancho del viewport del navegador). +
+ Se utiliza para: +
+
+ * Aplicar estilos condicionales con las reglas-at @media e @import de CSS.
+* Indicar medios específicos en los elementos <link>, <source> y otros elementos HTML.
+* Testear y monitorizar los estados de los medios usando los métodos de javascript Window.matchMedia() y MediaQueryList.addListener().
+
+
+== Posicionamiento
+Los navegadores crean y posicionan de forma automática todas las cajas que forman cada +
+página HTML. No obstante, CSS permite al diseñador modificar la posición en la que +
+ se muestra cada caja. +
+ 
+Utilizando las propiedades que proporciona CSS para alterar la posición de las cajas +
+es posible realizar efectos muy avanzados y diseñar estructuras de páginas que de +
+otra forma no serían posibles. +
+
+* Posicionamiento normal o estático: se trata del posicionamiento que utilizan los navegadores si no se indica lo contrario. +
+* Posicionamiento relativo: variante del posicionamiento normal que consiste en posicionar una caja según el posicionamiento normal y después desplazarla respecto de su posición original. +
+* Posicionamiento absoluto: la posición de una caja se establece de forma absoluta respecto de su elemento contenedor y el resto de elementos de la página ignoran la nueva posición del elemento. +
+* Posicionamiento fijo: variante del posicionamiento absoluto que convierte una caja en un elemento inamovible, de forma que su posición en la pantalla siempre es la misma independientemente del resto de elementos e independientemente de si el usuario sube o baja la página en la ventana del navegador. +
+* Posicionamiento flotante: se trata del modelo más especial de posicionamiento, ya que desplaza las cajas todo lo posible hacia la izquierda o hacia la derecha de la línea en la que se encuentran. +
+
+El significado de cada uno de los posibles valores de la propiedad position es el siguiente: +
+
+* static: corresponde al posicionamiento normal o estático. Si se utiliza este valor, se ignoran los valores de las propiedades top, right, bottom y left que se verán a continuación.
+* relative: corresponde al posicionamiento relativo. El desplazamiento de la caja se controla con las propiedades top, right, bottom y left.
+* absolute: corresponde al posicionamiento absoluto. El desplazamiento de la caja también se controla con las propiedades top, right, bottom y left, pero su interpretación es mucho más compleja, ya que el origen de coordenadas del desplazamiento depende del posicionamiento de su elemento contenedor.
+* fixed: corresponde al posicionamiento fijo. El desplazamiento se establece de la misma forma que en el posicionamiento absoluto, pero en este caso el elemento permanece inamovible en la pantalla.
+
+
+
+
+
