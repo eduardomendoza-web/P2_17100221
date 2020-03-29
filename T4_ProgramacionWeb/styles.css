@@ -1,0 +1,69 @@
+body {
+    background-color: blue;
+    align-content: center;
+}
+
+* {
+    font-family: 'PT Sans', sans-serif;     
+}
+
+label {
+    font-weight: bold;
+}
+
+.boton {
+    color: gold;
+    font-weight: bold;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: black;
+    transition-duration: 400ms;
+}
+
+#contenedor {
+    margin: 10px;
+    display: flex;    
+    border-style: solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: orange;
+    align-content: center;
+    transition-duration: 400ms;
+}
+
+#formulario {
+    flex-grow: 0;
+    flex-direction: row;
+    margin: 10px;
+    transition-duration: 400ms;
+}
+
+#serie {
+    flex-grow: 1;
+    flex-direction: row;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    transition-duration: 400ms;
+}
+
+@media screen and (max-width: 300px)
+{
+    #formulario, #contenedor{
+        flex-direction: column;
+        margin: 10px;
+        display: flex;
+        transition-duration: 400ms;
+    }
+
+    #serie {
+        width: unset;
+        margin: 10px;
+        transition-duration: 400ms;
+    }
+
+    .boton {
+        margin: 5px;
+        transition-duration: 400ms;
+    }
+}
