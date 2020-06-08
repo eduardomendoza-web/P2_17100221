@@ -1,0 +1,32 @@
+.link_edit{
+    color:#0ca4ce;
+}
+
+.link_delete{
+    color: #f26b6b;
+}
+
+.data_delete{
+    text-align: center;
+}
+
+.data_delete h2{
+    font-size: 12pt;
+}
+.data_delete span{
+    font-weight: bold;
+    color: #4f72d4 ;
+    font-size: 12pt;
+}
+.btn_cancel,.btn_ok{
+    width: 174px;
+    background: #478ba2;
+    color: #FFF;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:15px ;
+
+}
